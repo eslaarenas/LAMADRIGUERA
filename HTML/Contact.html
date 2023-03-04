@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LA MADRIGUERA CONTACT </title>
+    <link href="../CSS/contact.css" rel="STYLESHEET">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Index.html"> HOME </a>
+                </li>
+                <li>
+                    <a href="./Store.html"> STORE </a>
+                </li>
+                <li>
+                    <a href="./Aboutus.html"> ABOUT US </a>
+                </li>
+                <li>
+                    <a href="#"> CONTACT US </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="imagecontainer">
+            <img src="../MEDIA/images/lamadrigueralogo.jpeg">
+        </div>
+    </header>
+    <div id="contact">
+        <div class="form">          
+            <h1> CONTACT US </h1>
+        <br>
+            <p>Please, complete the next fields and we will contact you, for your order </p>
+        <br>
+            <form action="landingpage.html" method="POST" class="fields">
+                <div class="inputs">
+                    <label for="Name">Give us your name</label>
+                    <input type="text" name="name" id="Name" required>
+                <br> 
+                <br>
+                    <label for="Email">Email info </label>
+                    <input type="email" name="email" id="Email" placeholder="ex@email.com" required>
+                <br>
+                <br>
+                    <label for="Phone">Phone number</label>
+                <!-- hacer que en el patron el primer numero sea 3 -->
+                    <input type="tel" name="phone" id="Phone" pattern="[0-9]{10}" required>
+                <br>
+                <br>
+                    <div id="cityfield"> 
+                        <p> The products can only been send to a few cities in Colombia </p>
+                    <br>
+                        <label for="City">City</label>
+                        <input type="text"  list="optioncity" name="city" id="City" required>
+                        <datalist id="optioncity"> 
+                            <option value="Armenia"> Armenia </option>
+                            <option value="Bogota"> Bogota </option> 
+                            <option value="Cali"> Cali </option>
+                            <option value="Manizales"> Manizales </option>
+                            <option value="Medellin"> Medellin  </option>
+                            <option value="Pereira"> Pereira </option>
+                        </datalist>
+                    </div>
+                <br>
+                    <label> What can we do for you?</label> <br>
+                    <br>
+                    <label for="services" class="checkbox"> Services</label>
+                    <input type="checkbox" value="services" name="contactReason" id="services" class="checkbox">
+                    <label for="guidance" class="checkbox">Guidance</label>
+                    <input type="checkbox" value="guidance" name="contactReason" id="guidance" class="checkbox">
+                    <label for="products" class="checkbox">Products</label>
+                    <input type="checkbox" value="products" name="contactReason" id="products" class="checkbox">
+                <br>
+                <br>
+                    <label for="textAdd" class="title"> Give us more details about your order </label>
+                    <br>
+                    <br>
+                        <textarea id="textAdd" name="boxComplaints" rows="5" cols="35"> 
+                        </textarea>
+                <br>
+                    <input id="sendButton" type="submit" value="Send" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>
+            LA MADRIGUERA <br>
+            "Artesanal como nuestras raíces" <br>
+            Est 2022
+        </P>
+    </footer>
+</body>

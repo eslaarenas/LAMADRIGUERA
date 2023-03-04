@@ -1,3 +1,149 @@
 *{
-    margin:0;
+    margin:0%;
+    padding:0%
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("./Fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+body {
+    font-family: "roboto", "sans-serif";
+}
+nav {
+    margin:0 auto;
+    width:100%;
+    height:auto;
+    display:inline-block;
+    background:#353535;
+    position:sticky;
+}
+  
+nav ul {
+    margin:0;padding:0;
+    list-style-type:none;
+    float:center;
+    display:inline-block;
+}
+  
+nav ul li {
+    position:relative;
+    margin:0 20px 0 0;
+    float:center;
+    display:inline-block;
+}
+  
+li > a:after { content: ' »'; }
+  
+li > a:only-child:after { content: ''; }
+  
+nav ul li a {
+    padding:20px;
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+}
+  
+nav ul li a:hover {
+    opacity:0.5;
+}
+  
+nav ul li ul {
+    display:none;
+    position:absolute;
+    left:0;
+    background:#353535;
+    float:center;
+}
+  
+nav ul li ul li {
+    width:100%;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+  
+nav ul li:hover ul {
+    display:block;
+}
+a:hover {
+	color: #44a160;
+	text-decoration: none;
+}
+
+.imagecontainer {
+    background-color:#353535;
+    display:flex;
+    justify-content: center;
+}
+.imagecontainer img {
+    width:100%
+    margin: auto;
+}
+main {
+    margin: 5% 10%;
+    text-align: center;
+    color:#353535;
+}
+#secmenu {
+    display:inline-flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+.whatimage {
+    padding: 3rem 2rem;
+}
+#secwhatis, #secbenefits, #secingredients, #secproduction, #secbacteria {
+    padding-top: 4rem 4rem;
+    padding-bottom: 4rem;
+}
+main ul li {
+    list-style:circle;
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+}
+span {
+    color:#353535;
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+    font-size: larger;
+}
+footer {
+    background-color: #353535;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+}
+.ingredients {
+    padding: 3rem 2rem;
+    width: 40%;
+}
+#secbenefits, #secproduction {
+    border-color: #353535;
+    display:flexbox;
+    border-style: solid;
+    justify-content: center;
+    margin-top: 40;
+}
+#video {
+    justify-content: center;
+    align-items: center;
+    margin-right: 60;
+    margin-top: 60;
+    display: flex;
+}
+#branding {
+    border-color: #353535;
+    display:flexbox;
+    border-style: solid;
+    justify-content: center;
 }

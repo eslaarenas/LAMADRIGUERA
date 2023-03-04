@@ -1,0 +1,119 @@
+*{
+    margin:0%;
+    padding:0%
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("./Fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+body {
+    font-family: "roboto", "sans-serif";
+}
+nav {
+    margin:0 auto;
+    width:100%;
+    height:auto;
+    display:inline-block;
+    background:#353535;
+    position:sticky;
+}
+  
+nav ul {
+    margin:0;padding:0;
+    list-style-type:none;
+    float:center;
+    display:inline-block;
+}
+  
+nav ul li {
+    position:relative;
+    margin:0 20px 0 0;
+    float:center;
+    display:inline-block;
+}
+  
+li > a:after { content: ' »'; }
+  
+li > a:only-child:after { content: ''; }
+  
+nav ul li a {
+    padding:20px;
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+}
+  
+nav ul li a:hover {
+    opacity:0.5;
+}
+  
+nav ul li ul {
+    display:none;
+    position:absolute;
+    left:0;
+    background:#353535;
+    float:center;
+}
+  
+nav ul li ul li {
+    width:100%;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+  
+nav ul li:hover ul {
+    display:block;
+}
+a:hover {
+	color: #44a160;
+	text-decoration: none;
+}
+
+.imagecontainer {
+    background-color:#353535;
+    display:flex;
+    justify-content: center;
+}
+.imagecontainer img {
+    width:100%
+    margin: auto;
+}
+main {
+    margin: 5% 10%;
+    text-align: center;
+    color:#353535;
+}
+#brandingus {
+    border-color: #353535;
+    display:flexbox;
+    border-style: solid;
+    justify-content: center;
+    padding: 10 10;
+}
+footer {
+    background-color: #353535;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+}
+#secteam {
+    padding-top: 4rem 4rem;
+    padding-bottom: 4rem;
+}
+.teamimage, .autorimage {
+    padding: 2rem 2rem;
+    width: 40%;
+}
+main ul li {
+    list-style:circle;
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+}
+span {
+    color:#353535;
+    font-weight: bold;
+}
