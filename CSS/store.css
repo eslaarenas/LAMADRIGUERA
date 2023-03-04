@@ -6,6 +6,10 @@
     font-family: "Roboto";
     src: url("./Fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
+header {
+    z-index: 100;
+    position: relative;
+}
 body {
     font-family: "roboto", "sans-serif";
     width: 100%;
@@ -17,6 +21,7 @@ nav {
     height:auto;
     display:inline-block;
     background:#353535;
+    z-index: 100;
 }
   
 nav ul {
@@ -68,22 +73,35 @@ a:hover {
 	color: #44a160;
 	text-decoration: none;
 }
-.imagecontainer {
-    background-color:#353535;
-    display:flex;
+.content {
+    display: flex;
+    position: relative;
     justify-content: center;
-}
-.imagecontainer img {
-    width:100%
-    margin: auto;
-}
-footer {
-    background-color: #353535;
-    color: #fff;
     text-align: center;
-    margin-top: 40px;
-    width: 100%;
+    z-index: 50;
+    color: #962424;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-footer p {
+.tittle {
+    display: flex;
+    position: relative;
+    justify-content: center;
     text-align: center;
+    z-index: 50;
+    color: #962424;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 20px;
+}
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
 }
